@@ -1,0 +1,22 @@
+# Local Postgres for the raw FHIR load and the OMOP tables. Port is bound to this machine only.
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: fhir-to-omop-db
+    env_file: .env
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5433}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    shm_size: 512mb
+    command: >
+      postgres -c shared_buffers=1GB -c work_mem=64MB -c maintenance_work_mem=512MB
+      -c max_wal_size=4GB -c synchronous_commit=off
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  pgdata:

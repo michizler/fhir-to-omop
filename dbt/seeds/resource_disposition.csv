@@ -1,0 +1,25 @@
+resource_type,disposition,destination,reason
+Patient,loaded,person,
+Encounter,loaded,visit_occurrence,
+Condition,loaded,routed by concept domain,
+Procedure,loaded,routed by concept domain,
+MedicationRequest,loaded,routed by concept domain,
+Immunization,loaded,routed by concept domain,
+Observation,loaded,routed by concept domain,
+AllergyIntolerance,loaded,routed by concept domain,
+Medication,used,staging only,Names the drug for prescriptions that refer to it
+MedicationAdministration,out_of_scope,,Repeats the drug already recorded on its prescription
+DiagnosticReport,out_of_scope,,Either groups Observations that are loaded on their own or holds the visit note as free text
+DocumentReference,out_of_scope,,Free text note and the OMOP note table is not built
+Claim,out_of_scope,,US billing record
+ExplanationOfBenefit,out_of_scope,,US billing record
+Provenance,out_of_scope,,Records who created the data and holds no clinical fact
+CarePlan,out_of_scope,,A plan and not an event that happened
+CareTeam,out_of_scope,,Names staff and holds no clinical fact
+SupplyDelivery,out_of_scope,,Supplies given to a patient. Could load to device_exposure but no analysis here needs it
+Device,out_of_scope,,Holds manufacture dates and not when the device was used
+ImagingStudy,out_of_scope,,Core OMOP has no imaging table
+Organization,out_of_scope,,Shared reference data and the care site table is not built
+Location,out_of_scope,,Shared reference data and the care site table is not built
+Practitioner,out_of_scope,,Shared reference data and the provider table is not built
+PractitionerRole,out_of_scope,,Shared reference data and the provider table is not built

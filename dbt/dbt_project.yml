@@ -1,0 +1,24 @@
+# dbt project: staging views over the raw FHIR rows, then the OMOP tables.
+name: fhir_to_omop
+version: "0.1.0"
+profile: fhir_to_omop
+model-paths: ["models"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  fhir_to_omop:
+    staging:
+      +schema: staging
+      +materialized: table       # at this size, re-reading the JSON on every query is too slow for a view
+    intermediate:
+      +schema: intermediate
+      +materialized: table
+    omop:
+      +schema: omop
+      +materialized: table
+
+seeds:
+  fhir_to_omop:
+    +schema: reference

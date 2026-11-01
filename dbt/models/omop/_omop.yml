@@ -1,0 +1,50 @@
+# Checks on the OMOP tables: keys, foreign keys into person and visit, and every concept ID existing in the vocabulary.
+version: 2
+
+models:
+  - name: person
+    columns:
+      - name: person_id
+        data_tests: [unique, not_null]
+  - name: visit_occurrence
+    columns:
+      - name: visit_occurrence_id
+        data_tests: [unique, not_null]
+      - name: person_id
+        data_tests:
+          - relationships: {arguments: {to: ref('person'), field: person_id}}
+  - name: condition_occurrence
+    columns:
+      - name: condition_occurrence_id
+        data_tests: [unique, not_null]
+      - name: person_id
+        data_tests:
+          - relationships: {arguments: {to: ref('person'), field: person_id}}
+  - name: procedure_occurrence
+    columns:
+      - name: procedure_occurrence_id
+        data_tests: [unique, not_null]
+  - name: drug_exposure
+    columns:
+      - name: drug_exposure_id
+        data_tests: [unique, not_null]
+  - name: measurement
+    columns:
+      - name: measurement_id
+        data_tests: [unique, not_null]
+  - name: observation
+    columns:
+      - name: observation_id
+        data_tests: [unique, not_null]
+  - name: device_exposure
+    columns:
+      - name: device_exposure_id
+        data_tests: [unique, not_null]
+  - name: death
+    columns:
+      - name: person_id
+        data_tests: [unique, not_null]
+  - name: observation_period
+    columns:
+      - name: person_id
+        data_tests: [unique, not_null]

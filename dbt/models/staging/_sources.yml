@@ -1,0 +1,8 @@
+# The raw tables written by the Python loader.
+version: 2
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: fhir_resource
+      - name: load_audit

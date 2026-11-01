@@ -1,0 +1,6 @@
+class_code,visit_concept_id,visit_name
+AMB,9202,Outpatient Visit
+EMER,9203,Emergency Room Visit
+IMP,9201,Inpatient Visit
+HH,581476,Home Visit
+VR,722455,Telehealth

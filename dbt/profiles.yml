@@ -1,0 +1,13 @@
+# Connection to the local Postgres. Uses 127.0.0.1 because the container listens on IPv4 only.
+fhir_to_omop:
+  target: local
+  outputs:
+    local:
+      type: postgres
+      host: 127.0.0.1
+      port: "{{ env_var('POSTGRES_PORT', '5433') | int }}"
+      user: "{{ env_var('POSTGRES_USER', 'omop') }}"
+      password: "{{ env_var('POSTGRES_PASSWORD', 'local-dev-only') }}"
+      dbname: "{{ env_var('POSTGRES_DB', 'omop') }}"
+      schema: public
+      threads: 4

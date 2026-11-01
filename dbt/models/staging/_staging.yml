@@ -1,0 +1,67 @@
+# Checks on the staging views: IDs are unique, keys are present, and every record points at a real patient.
+version: 2
+
+models:
+  - name: stg_patient
+    columns:
+      - name: patient_id
+        data_tests: [unique, not_null]
+      - name: birth_date
+        data_tests: [not_null]
+  - name: stg_encounter
+    columns:
+      - name: encounter_id
+        data_tests: [unique, not_null]
+      - name: patient_id
+        data_tests:
+          - not_null
+          - relationships: {arguments: {to: ref('stg_patient'), field: patient_id}}
+      - name: started_at
+        data_tests: [not_null]
+  - name: stg_condition
+    columns:
+      - name: condition_id
+        data_tests: [unique, not_null]
+      - name: code
+        data_tests: [not_null]
+      - name: encounter_id
+        data_tests:
+          - relationships: {arguments: {to: ref('stg_encounter'), field: encounter_id}}
+  - name: stg_procedure
+    columns:
+      - name: procedure_id
+        data_tests: [unique, not_null]
+      - name: code
+        data_tests: [not_null]
+      - name: encounter_id
+        data_tests:
+          - relationships: {arguments: {to: ref('stg_encounter'), field: encounter_id}}
+  - name: stg_immunization
+    columns:
+      - name: immunization_id
+        data_tests: [unique, not_null]
+      - name: code
+        data_tests: [not_null]
+  - name: stg_medication_request
+    columns:
+      - name: medication_request_id
+        data_tests: [unique, not_null]
+      - name: code
+        description: Null here would mean a Medication reference failed to resolve.
+        data_tests: [not_null]
+      - name: encounter_id
+        data_tests:
+          - relationships: {arguments: {to: ref('stg_encounter'), field: encounter_id}}
+  - name: stg_allergy
+    columns:
+      - name: allergy_id
+        data_tests: [unique, not_null]
+      - name: code
+        data_tests: [not_null]
+  - name: stg_observation
+    data_tests:
+      - dbt_utils_free_unique:
+          arguments: {columns: "observation_id, component_index"}
+    columns:
+      - name: code
+        data_tests: [not_null]

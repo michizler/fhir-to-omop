@@ -1,0 +1,6 @@
+code_system,vocabulary_id
+http://snomed.info/sct,SNOMED
+http://loinc.org,LOINC
+http://www.nlm.nih.gov/research/umls/rxnorm,RxNorm
+http://hl7.org/fhir/sid/cvx,CVX
+http://unitsofmeasure.org,UCUM

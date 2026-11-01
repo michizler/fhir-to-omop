@@ -1,0 +1,6 @@
+{"resourceType": "Bundle", "type": "transaction", "entry": [
+  {"fullUrl": "urn:uuid:p-1", "resource": {"resourceType": "Patient", "id": "p-1", "gender": "female", "birthDate": "1980-02-03"}},
+  {"fullUrl": "urn:uuid:e-1", "resource": {"resourceType": "Encounter", "id": "e-1", "subject": {"reference": "urn:uuid:p-1"}}},
+  {"fullUrl": "urn:uuid:c-1", "resource": {"resourceType": "Condition", "id": "c-1", "subject": {"reference": "urn:uuid:p-1"},
+    "code": {"coding": [{"system": "http://snomed.info/sct", "code": "44054006", "display": "Diabetes mellitus type 2 (disorder)"}]}}}
+]}

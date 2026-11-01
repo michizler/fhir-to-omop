@@ -7,6 +7,8 @@ select
     resource #>> '{address,0,city}' as city,
     resource #>> '{address,0,state}' as state,
     resource #>> '{address,0,postalCode}' as postal_code,
+    (resource #>> '{address,0,extension,0,extension,0,valueDecimal}')::numeric as latitude,
+    (resource #>> '{address,0,extension,0,extension,1,valueDecimal}')::numeric as longitude,
     (select e -> 'extension' -> 0 -> 'valueCoding' ->> 'code'
      from jsonb_array_elements(resource -> 'extension') e
      where e ->> 'url' like '%us-core-race') as race_code,

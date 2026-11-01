@@ -18,6 +18,9 @@ models:
     omop:
       +schema: omop
       +materialized: table
+    ml:
+      +schema: ml
+      +materialized: table
 
 seeds:
   fhir_to_omop:

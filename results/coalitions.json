@@ -1,0 +1,1655 @@
+{
+ "checkpoints": [
+  10,
+  20,
+  40,
+  80,
+  160,
+  320
+ ],
+ "trusts": [
+  {
+   "id": 0,
+   "name": "Trust A",
+   "largest_city": "Springfield",
+   "patients": 141,
+   "patient_years": 1051,
+   "emergency_rate": 0.1351,
+   "auroc_alone": 0.6643
+  },
+  {
+   "id": 1,
+   "name": "Trust B",
+   "largest_city": "Barnstable",
+   "patients": 60,
+   "patient_years": 449,
+   "emergency_rate": 0.1314,
+   "auroc_alone": 0.6889
+  },
+  {
+   "id": 2,
+   "name": "Trust C",
+   "largest_city": "Worcester",
+   "patients": 168,
+   "patient_years": 1280,
+   "emergency_rate": 0.1094,
+   "auroc_alone": 0.5583
+  },
+  {
+   "id": 3,
+   "name": "Trust D",
+   "largest_city": "Brockton",
+   "patients": 212,
+   "patient_years": 1565,
+   "emergency_rate": 0.1335,
+   "auroc_alone": 0.6261
+  },
+  {
+   "id": 4,
+   "name": "Trust E",
+   "largest_city": "Boston",
+   "patients": 434,
+   "patient_years": 3281,
+   "emergency_rate": 0.135,
+   "auroc_alone": 0.6699
+  }
+ ],
+ "groups": {
+  "0": {
+   "members": [
+    0
+   ],
+   "patients": 141,
+   "patient_years": 1051,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.5563
+    },
+    {
+     "round": 20,
+     "auroc": 0.6031
+    },
+    {
+     "round": 40,
+     "auroc": 0.6364
+    },
+    {
+     "round": 80,
+     "auroc": 0.6573
+    },
+    {
+     "round": 160,
+     "auroc": 0.6639
+    },
+    {
+     "round": 320,
+     "auroc": 0.6599
+    }
+   ],
+   "alone_auroc": 0.6643,
+   "pooled_auroc": 0.6998,
+   "per_trust": [
+    {
+     "trust": 0,
+     "alone": 0.6643,
+     "together": 0.6599
+    }
+   ]
+  },
+  "1": {
+   "members": [
+    1
+   ],
+   "patients": 60,
+   "patient_years": 449,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.4651
+    },
+    {
+     "round": 20,
+     "auroc": 0.5734
+    },
+    {
+     "round": 40,
+     "auroc": 0.6419
+    },
+    {
+     "round": 80,
+     "auroc": 0.6772
+    },
+    {
+     "round": 160,
+     "auroc": 0.6837
+    },
+    {
+     "round": 320,
+     "auroc": 0.6868
+    }
+   ],
+   "alone_auroc": 0.6889,
+   "pooled_auroc": 0.7986,
+   "per_trust": [
+    {
+     "trust": 1,
+     "alone": 0.6889,
+     "together": 0.6868
+    }
+   ]
+  },
+  "2": {
+   "members": [
+    2
+   ],
+   "patients": 168,
+   "patient_years": 1280,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.4088
+    },
+    {
+     "round": 20,
+     "auroc": 0.4832
+    },
+    {
+     "round": 40,
+     "auroc": 0.5267
+    },
+    {
+     "round": 80,
+     "auroc": 0.5528
+    },
+    {
+     "round": 160,
+     "auroc": 0.5589
+    },
+    {
+     "round": 320,
+     "auroc": 0.5516
+    }
+   ],
+   "alone_auroc": 0.5583,
+   "pooled_auroc": 0.6278,
+   "per_trust": [
+    {
+     "trust": 2,
+     "alone": 0.5583,
+     "together": 0.5516
+    }
+   ]
+  },
+  "3": {
+   "members": [
+    3
+   ],
+   "patients": 212,
+   "patient_years": 1565,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.5163
+    },
+    {
+     "round": 20,
+     "auroc": 0.5706
+    },
+    {
+     "round": 40,
+     "auroc": 0.5941
+    },
+    {
+     "round": 80,
+     "auroc": 0.6111
+    },
+    {
+     "round": 160,
+     "auroc": 0.6235
+    },
+    {
+     "round": 320,
+     "auroc": 0.6295
+    }
+   ],
+   "alone_auroc": 0.6261,
+   "pooled_auroc": 0.6605,
+   "per_trust": [
+    {
+     "trust": 3,
+     "alone": 0.6261,
+     "together": 0.6295
+    }
+   ]
+  },
+  "4": {
+   "members": [
+    4
+   ],
+   "patients": 434,
+   "patient_years": 3281,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.619
+    },
+    {
+     "round": 20,
+     "auroc": 0.6563
+    },
+    {
+     "round": 40,
+     "auroc": 0.6708
+    },
+    {
+     "round": 80,
+     "auroc": 0.674
+    },
+    {
+     "round": 160,
+     "auroc": 0.67
+    },
+    {
+     "round": 320,
+     "auroc": 0.6717
+    }
+   ],
+   "alone_auroc": 0.6699,
+   "pooled_auroc": 0.6826,
+   "per_trust": [
+    {
+     "trust": 4,
+     "alone": 0.6699,
+     "together": 0.6717
+    }
+   ]
+  },
+  "0,1": {
+   "members": [
+    0,
+    1
+   ],
+   "patients": 201,
+   "patient_years": 1500,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.5426
+    },
+    {
+     "round": 20,
+     "auroc": 0.6114
+    },
+    {
+     "round": 40,
+     "auroc": 0.6554
+    },
+    {
+     "round": 80,
+     "auroc": 0.6833
+    },
+    {
+     "round": 160,
+     "auroc": 0.6982
+    },
+    {
+     "round": 320,
+     "auroc": 0.7001
+    }
+   ],
+   "alone_auroc": 0.6739,
+   "pooled_auroc": 0.7294,
+   "per_trust": [
+    {
+     "trust": 0,
+     "alone": 0.6643,
+     "together": 0.6794
+    },
+    {
+     "trust": 1,
+     "alone": 0.6889,
+     "together": 0.7488
+    }
+   ]
+  },
+  "0,2": {
+   "members": [
+    0,
+    2
+   ],
+   "patients": 309,
+   "patient_years": 2331,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.497
+    },
+    {
+     "round": 20,
+     "auroc": 0.5709
+    },
+    {
+     "round": 40,
+     "auroc": 0.6107
+    },
+    {
+     "round": 80,
+     "auroc": 0.6308
+    },
+    {
+     "round": 160,
+     "auroc": 0.6426
+    },
+    {
+     "round": 320,
+     "auroc": 0.6468
+    }
+   ],
+   "alone_auroc": 0.6133,
+   "pooled_auroc": 0.6651,
+   "per_trust": [
+    {
+     "trust": 0,
+     "alone": 0.6643,
+     "together": 0.6991
+    },
+    {
+     "trust": 2,
+     "alone": 0.5583,
+     "together": 0.5907
+    }
+   ]
+  },
+  "0,3": {
+   "members": [
+    0,
+    3
+   ],
+   "patients": 353,
+   "patient_years": 2616,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.5442
+    },
+    {
+     "round": 20,
+     "auroc": 0.5964
+    },
+    {
+     "round": 40,
+     "auroc": 0.6287
+    },
+    {
+     "round": 80,
+     "auroc": 0.6474
+    },
+    {
+     "round": 160,
+     "auroc": 0.6586
+    },
+    {
+     "round": 320,
+     "auroc": 0.6628
+    }
+   ],
+   "alone_auroc": 0.6431,
+   "pooled_auroc": 0.6774,
+   "per_trust": [
+    {
+     "trust": 0,
+     "alone": 0.6643,
+     "together": 0.7005
+    },
+    {
+     "trust": 3,
+     "alone": 0.6261,
+     "together": 0.635
+    }
+   ]
+  },
+  "0,4": {
+   "members": [
+    0,
+    4
+   ],
+   "patients": 575,
+   "patient_years": 4332,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.6085
+    },
+    {
+     "round": 20,
+     "auroc": 0.6554
+    },
+    {
+     "round": 40,
+     "auroc": 0.6738
+    },
+    {
+     "round": 80,
+     "auroc": 0.6795
+    },
+    {
+     "round": 160,
+     "auroc": 0.6785
+    },
+    {
+     "round": 320,
+     "auroc": 0.6788
+    }
+   ],
+   "alone_auroc": 0.671,
+   "pooled_auroc": 0.6872,
+   "per_trust": [
+    {
+     "trust": 0,
+     "alone": 0.6643,
+     "together": 0.6883
+    },
+    {
+     "trust": 4,
+     "alone": 0.6699,
+     "together": 0.6753
+    }
+   ]
+  },
+  "1,2": {
+   "members": [
+    1,
+    2
+   ],
+   "patients": 228,
+   "patient_years": 1729,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.4217
+    },
+    {
+     "round": 20,
+     "auroc": 0.5225
+    },
+    {
+     "round": 40,
+     "auroc": 0.5877
+    },
+    {
+     "round": 80,
+     "auroc": 0.6175
+    },
+    {
+     "round": 160,
+     "auroc": 0.6324
+    },
+    {
+     "round": 320,
+     "auroc": 0.6394
+    }
+   ],
+   "alone_auroc": 0.6023,
+   "pooled_auroc": 0.6806,
+   "per_trust": [
+    {
+     "trust": 1,
+     "alone": 0.6889,
+     "together": 0.7606
+    },
+    {
+     "trust": 2,
+     "alone": 0.5583,
+     "together": 0.5841
+    }
+   ]
+  },
+  "1,3": {
+   "members": [
+    1,
+    3
+   ],
+   "patients": 272,
+   "patient_years": 2014,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.5196
+    },
+    {
+     "round": 20,
+     "auroc": 0.5855
+    },
+    {
+     "round": 40,
+     "auroc": 0.6203
+    },
+    {
+     "round": 80,
+     "auroc": 0.6452
+    },
+    {
+     "round": 160,
+     "auroc": 0.6612
+    },
+    {
+     "round": 320,
+     "auroc": 0.6692
+    }
+   ],
+   "alone_auroc": 0.6435,
+   "pooled_auroc": 0.6932,
+   "per_trust": [
+    {
+     "trust": 1,
+     "alone": 0.6889,
+     "together": 0.758
+    },
+    {
+     "trust": 3,
+     "alone": 0.6261,
+     "together": 0.642
+    }
+   ]
+  },
+  "1,4": {
+   "members": [
+    1,
+    4
+   ],
+   "patients": 494,
+   "patient_years": 3730,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.6183
+    },
+    {
+     "round": 20,
+     "auroc": 0.6615
+    },
+    {
+     "round": 40,
+     "auroc": 0.6805
+    },
+    {
+     "round": 80,
+     "auroc": 0.6839
+    },
+    {
+     "round": 160,
+     "auroc": 0.6804
+    },
+    {
+     "round": 320,
+     "auroc": 0.6825
+    }
+   ],
+   "alone_auroc": 0.6733,
+   "pooled_auroc": 0.6962,
+   "per_trust": [
+    {
+     "trust": 1,
+     "alone": 0.6889,
+     "together": 0.7544
+    },
+    {
+     "trust": 4,
+     "alone": 0.6699,
+     "together": 0.6727
+    }
+   ]
+  },
+  "2,3": {
+   "members": [
+    2,
+    3
+   ],
+   "patients": 380,
+   "patient_years": 2845,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.4744
+    },
+    {
+     "round": 20,
+     "auroc": 0.5496
+    },
+    {
+     "round": 40,
+     "auroc": 0.5873
+    },
+    {
+     "round": 80,
+     "auroc": 0.613
+    },
+    {
+     "round": 160,
+     "auroc": 0.6263
+    },
+    {
+     "round": 320,
+     "auroc": 0.63
+    }
+   ],
+   "alone_auroc": 0.6016,
+   "pooled_auroc": 0.6482,
+   "per_trust": [
+    {
+     "trust": 2,
+     "alone": 0.5583,
+     "together": 0.6049
+    },
+    {
+     "trust": 3,
+     "alone": 0.6261,
+     "together": 0.6451
+    }
+   ]
+  },
+  "2,4": {
+   "members": [
+    2,
+    4
+   ],
+   "patients": 602,
+   "patient_years": 4561,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.5894
+    },
+    {
+     "round": 20,
+     "auroc": 0.6393
+    },
+    {
+     "round": 40,
+     "auroc": 0.6588
+    },
+    {
+     "round": 80,
+     "auroc": 0.6626
+    },
+    {
+     "round": 160,
+     "auroc": 0.6607
+    },
+    {
+     "round": 320,
+     "auroc": 0.6615
+    }
+   ],
+   "alone_auroc": 0.6475,
+   "pooled_auroc": 0.6711,
+   "per_trust": [
+    {
+     "trust": 2,
+     "alone": 0.5583,
+     "together": 0.6082
+    },
+    {
+     "trust": 4,
+     "alone": 0.6699,
+     "together": 0.675
+    }
+   ]
+  },
+  "3,4": {
+   "members": [
+    3,
+    4
+   ],
+   "patients": 646,
+   "patient_years": 4846,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.592
+    },
+    {
+     "round": 20,
+     "auroc": 0.641
+    },
+    {
+     "round": 40,
+     "auroc": 0.6613
+    },
+    {
+     "round": 80,
+     "auroc": 0.6672
+    },
+    {
+     "round": 160,
+     "auroc": 0.6663
+    },
+    {
+     "round": 320,
+     "auroc": 0.666
+    }
+   ],
+   "alone_auroc": 0.6569,
+   "pooled_auroc": 0.6756,
+   "per_trust": [
+    {
+     "trust": 3,
+     "alone": 0.6261,
+     "together": 0.6441
+    },
+    {
+     "trust": 4,
+     "alone": 0.6699,
+     "together": 0.676
+    }
+   ]
+  },
+  "0,1,2": {
+   "members": [
+    0,
+    1,
+    2
+   ],
+   "patients": 369,
+   "patient_years": 2780,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.4936
+    },
+    {
+     "round": 20,
+     "auroc": 0.5801
+    },
+    {
+     "round": 40,
+     "auroc": 0.629
+    },
+    {
+     "round": 80,
+     "auroc": 0.6537
+    },
+    {
+     "round": 160,
+     "auroc": 0.6684
+    },
+    {
+     "round": 320,
+     "auroc": 0.6742
+    }
+   ],
+   "alone_auroc": 0.6289,
+   "pooled_auroc": 0.689,
+   "per_trust": [
+    {
+     "trust": 0,
+     "alone": 0.6643,
+     "together": 0.7014
+    },
+    {
+     "trust": 1,
+     "alone": 0.6889,
+     "together": 0.7802
+    },
+    {
+     "trust": 2,
+     "alone": 0.5583,
+     "together": 0.5994
+    }
+   ]
+  },
+  "0,1,3": {
+   "members": [
+    0,
+    1,
+    3
+   ],
+   "patients": 413,
+   "patient_years": 3065,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.5425
+    },
+    {
+     "round": 20,
+     "auroc": 0.6027
+    },
+    {
+     "round": 40,
+     "auroc": 0.6402
+    },
+    {
+     "round": 80,
+     "auroc": 0.6647
+    },
+    {
+     "round": 160,
+     "auroc": 0.6798
+    },
+    {
+     "round": 320,
+     "auroc": 0.6858
+    }
+   ],
+   "alone_auroc": 0.6516,
+   "pooled_auroc": 0.6959,
+   "per_trust": [
+    {
+     "trust": 0,
+     "alone": 0.6643,
+     "together": 0.7048
+    },
+    {
+     "trust": 1,
+     "alone": 0.6889,
+     "together": 0.7772
+    },
+    {
+     "trust": 3,
+     "alone": 0.6261,
+     "together": 0.6436
+    }
+   ]
+  },
+  "0,1,4": {
+   "members": [
+    0,
+    1,
+    4
+   ],
+   "patients": 635,
+   "patient_years": 4781,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.6077
+    },
+    {
+     "round": 20,
+     "auroc": 0.6587
+    },
+    {
+     "round": 40,
+     "auroc": 0.6814
+    },
+    {
+     "round": 80,
+     "auroc": 0.6877
+    },
+    {
+     "round": 160,
+     "auroc": 0.6869
+    },
+    {
+     "round": 320,
+     "auroc": 0.6876
+    }
+   ],
+   "alone_auroc": 0.6733,
+   "pooled_auroc": 0.6974,
+   "per_trust": [
+    {
+     "trust": 0,
+     "alone": 0.6643,
+     "together": 0.6898
+    },
+    {
+     "trust": 1,
+     "alone": 0.6889,
+     "together": 0.7663
+    },
+    {
+     "trust": 4,
+     "alone": 0.6699,
+     "together": 0.676
+    }
+   ]
+  },
+  "0,2,3": {
+   "members": [
+    0,
+    2,
+    3
+   ],
+   "patients": 521,
+   "patient_years": 3896,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.5108
+    },
+    {
+     "round": 20,
+     "auroc": 0.5802
+    },
+    {
+     "round": 40,
+     "auroc": 0.6181
+    },
+    {
+     "round": 80,
+     "auroc": 0.6404
+    },
+    {
+     "round": 160,
+     "auroc": 0.6537
+    },
+    {
+     "round": 320,
+     "auroc": 0.6585
+    }
+   ],
+   "alone_auroc": 0.6205,
+   "pooled_auroc": 0.6638,
+   "per_trust": [
+    {
+     "trust": 0,
+     "alone": 0.6643,
+     "together": 0.7084
+    },
+    {
+     "trust": 2,
+     "alone": 0.5583,
+     "together": 0.6143
+    },
+    {
+     "trust": 3,
+     "alone": 0.6261,
+     "together": 0.6516
+    }
+   ]
+  },
+  "0,2,4": {
+   "members": [
+    0,
+    2,
+    4
+   ],
+   "patients": 743,
+   "patient_years": 5612,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.5858
+    },
+    {
+     "round": 20,
+     "auroc": 0.6404
+    },
+    {
+     "round": 40,
+     "auroc": 0.663
+    },
+    {
+     "round": 80,
+     "auroc": 0.6691
+    },
+    {
+     "round": 160,
+     "auroc": 0.6696
+    },
+    {
+     "round": 320,
+     "auroc": 0.6698
+    }
+   ],
+   "alone_auroc": 0.6519,
+   "pooled_auroc": 0.6769,
+   "per_trust": [
+    {
+     "trust": 0,
+     "alone": 0.6643,
+     "together": 0.6929
+    },
+    {
+     "trust": 2,
+     "alone": 0.5583,
+     "together": 0.6118
+    },
+    {
+     "trust": 4,
+     "alone": 0.6699,
+     "together": 0.6778
+    }
+   ]
+  },
+  "0,3,4": {
+   "members": [
+    0,
+    3,
+    4
+   ],
+   "patients": 787,
+   "patient_years": 5897,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.5892
+    },
+    {
+     "round": 20,
+     "auroc": 0.6418
+    },
+    {
+     "round": 40,
+     "auroc": 0.6652
+    },
+    {
+     "round": 80,
+     "auroc": 0.6726
+    },
+    {
+     "round": 160,
+     "auroc": 0.6729
+    },
+    {
+     "round": 320,
+     "auroc": 0.6722
+    }
+   ],
+   "alone_auroc": 0.6597,
+   "pooled_auroc": 0.6803,
+   "per_trust": [
+    {
+     "trust": 0,
+     "alone": 0.6643,
+     "together": 0.6926
+    },
+    {
+     "trust": 3,
+     "alone": 0.6261,
+     "together": 0.6439
+    },
+    {
+     "trust": 4,
+     "alone": 0.6699,
+     "together": 0.6781
+    }
+   ]
+  },
+  "1,2,3": {
+   "members": [
+    1,
+    2,
+    3
+   ],
+   "patients": 440,
+   "patient_years": 3294,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.4783
+    },
+    {
+     "round": 20,
+     "auroc": 0.5627
+    },
+    {
+     "round": 40,
+     "auroc": 0.6058
+    },
+    {
+     "round": 80,
+     "auroc": 0.6349
+    },
+    {
+     "round": 160,
+     "auroc": 0.6509
+    },
+    {
+     "round": 320,
+     "auroc": 0.6558
+    }
+   ],
+   "alone_auroc": 0.6167,
+   "pooled_auroc": 0.6714,
+   "per_trust": [
+    {
+     "trust": 1,
+     "alone": 0.6889,
+     "together": 0.7715
+    },
+    {
+     "trust": 2,
+     "alone": 0.5583,
+     "together": 0.6086
+    },
+    {
+     "trust": 3,
+     "alone": 0.6261,
+     "together": 0.6507
+    }
+   ]
+  },
+  "1,2,4": {
+   "members": [
+    1,
+    2,
+    4
+   ],
+   "patients": 662,
+   "patient_years": 5010,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.5892
+    },
+    {
+     "round": 20,
+     "auroc": 0.6443
+    },
+    {
+     "round": 40,
+     "auroc": 0.6678
+    },
+    {
+     "round": 80,
+     "auroc": 0.6725
+    },
+    {
+     "round": 160,
+     "auroc": 0.6712
+    },
+    {
+     "round": 320,
+     "auroc": 0.6727
+    }
+   ],
+   "alone_auroc": 0.6522,
+   "pooled_auroc": 0.6829,
+   "per_trust": [
+    {
+     "trust": 1,
+     "alone": 0.6889,
+     "together": 0.7711
+    },
+    {
+     "trust": 2,
+     "alone": 0.5583,
+     "together": 0.6107
+    },
+    {
+     "trust": 4,
+     "alone": 0.6699,
+     "together": 0.6757
+    }
+   ]
+  },
+  "1,3,4": {
+   "members": [
+    1,
+    3,
+    4
+   ],
+   "patients": 706,
+   "patient_years": 5295,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.5927
+    },
+    {
+     "round": 20,
+     "auroc": 0.645
+    },
+    {
+     "round": 40,
+     "auroc": 0.6696
+    },
+    {
+     "round": 80,
+     "auroc": 0.6764
+    },
+    {
+     "round": 160,
+     "auroc": 0.6763
+    },
+    {
+     "round": 320,
+     "auroc": 0.6769
+    }
+   ],
+   "alone_auroc": 0.6605,
+   "pooled_auroc": 0.6861,
+   "per_trust": [
+    {
+     "trust": 1,
+     "alone": 0.6889,
+     "together": 0.7773
+    },
+    {
+     "trust": 3,
+     "alone": 0.6261,
+     "together": 0.6471
+    },
+    {
+     "trust": 4,
+     "alone": 0.6699,
+     "together": 0.6767
+    }
+   ]
+  },
+  "2,3,4": {
+   "members": [
+    2,
+    3,
+    4
+   ],
+   "patients": 814,
+   "patient_years": 6126,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.5729
+    },
+    {
+     "round": 20,
+     "auroc": 0.6286
+    },
+    {
+     "round": 40,
+     "auroc": 0.6529
+    },
+    {
+     "round": 80,
+     "auroc": 0.6596
+    },
+    {
+     "round": 160,
+     "auroc": 0.6601
+    },
+    {
+     "round": 320,
+     "auroc": 0.6606
+    }
+   ],
+   "alone_auroc": 0.6422,
+   "pooled_auroc": 0.6682,
+   "per_trust": [
+    {
+     "trust": 2,
+     "alone": 0.5583,
+     "together": 0.6165
+    },
+    {
+     "trust": 3,
+     "alone": 0.6261,
+     "together": 0.6461
+    },
+    {
+     "trust": 4,
+     "alone": 0.6699,
+     "together": 0.6785
+    }
+   ]
+  },
+  "0,1,2,3": {
+   "members": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "patients": 581,
+   "patient_years": 4345,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.5103
+    },
+    {
+     "round": 20,
+     "auroc": 0.5863
+    },
+    {
+     "round": 40,
+     "auroc": 0.628
+    },
+    {
+     "round": 80,
+     "auroc": 0.6534
+    },
+    {
+     "round": 160,
+     "auroc": 0.6693
+    },
+    {
+     "round": 320,
+     "auroc": 0.6752
+    }
+   ],
+   "alone_auroc": 0.6295,
+   "pooled_auroc": 0.6791,
+   "per_trust": [
+    {
+     "trust": 0,
+     "alone": 0.6643,
+     "together": 0.7107
+    },
+    {
+     "trust": 1,
+     "alone": 0.6889,
+     "together": 0.786
+    },
+    {
+     "trust": 2,
+     "alone": 0.5583,
+     "together": 0.6172
+    },
+    {
+     "trust": 3,
+     "alone": 0.6261,
+     "together": 0.6552
+    }
+   ]
+  },
+  "0,1,2,4": {
+   "members": [
+    0,
+    1,
+    2,
+    4
+   ],
+   "patients": 803,
+   "patient_years": 6061,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.5853
+    },
+    {
+     "round": 20,
+     "auroc": 0.6437
+    },
+    {
+     "round": 40,
+     "auroc": 0.6701
+    },
+    {
+     "round": 80,
+     "auroc": 0.6771
+    },
+    {
+     "round": 160,
+     "auroc": 0.6781
+    },
+    {
+     "round": 320,
+     "auroc": 0.6789
+    }
+   ],
+   "alone_auroc": 0.6553,
+   "pooled_auroc": 0.6862,
+   "per_trust": [
+    {
+     "trust": 0,
+     "alone": 0.6643,
+     "together": 0.694
+    },
+    {
+     "trust": 1,
+     "alone": 0.6889,
+     "together": 0.7788
+    },
+    {
+     "trust": 2,
+     "alone": 0.5583,
+     "together": 0.6143
+    },
+    {
+     "trust": 4,
+     "alone": 0.6699,
+     "together": 0.6782
+    }
+   ]
+  },
+  "0,1,3,4": {
+   "members": [
+    0,
+    1,
+    3,
+    4
+   ],
+   "patients": 847,
+   "patient_years": 6346,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.5894
+    },
+    {
+     "round": 20,
+     "auroc": 0.6444
+    },
+    {
+     "round": 40,
+     "auroc": 0.6717
+    },
+    {
+     "round": 80,
+     "auroc": 0.6803
+    },
+    {
+     "round": 160,
+     "auroc": 0.6812
+    },
+    {
+     "round": 320,
+     "auroc": 0.6813
+    }
+   ],
+   "alone_auroc": 0.6624,
+   "pooled_auroc": 0.6887,
+   "per_trust": [
+    {
+     "trust": 0,
+     "alone": 0.6643,
+     "together": 0.6938
+    },
+    {
+     "trust": 1,
+     "alone": 0.6889,
+     "together": 0.7829
+    },
+    {
+     "trust": 3,
+     "alone": 0.6261,
+     "together": 0.6462
+    },
+    {
+     "trust": 4,
+     "alone": 0.6699,
+     "together": 0.6786
+    }
+   ]
+  },
+  "0,2,3,4": {
+   "members": [
+    0,
+    2,
+    3,
+    4
+   ],
+   "patients": 955,
+   "patient_years": 7177,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.5731
+    },
+    {
+     "round": 20,
+     "auroc": 0.6307
+    },
+    {
+     "round": 40,
+     "auroc": 0.6571
+    },
+    {
+     "round": 80,
+     "auroc": 0.6654
+    },
+    {
+     "round": 160,
+     "auroc": 0.6671
+    },
+    {
+     "round": 320,
+     "auroc": 0.6673
+    }
+   ],
+   "alone_auroc": 0.6464,
+   "pooled_auroc": 0.6733,
+   "per_trust": [
+    {
+     "trust": 0,
+     "alone": 0.6643,
+     "together": 0.697
+    },
+    {
+     "trust": 2,
+     "alone": 0.5583,
+     "together": 0.6177
+    },
+    {
+     "trust": 3,
+     "alone": 0.6261,
+     "together": 0.6465
+    },
+    {
+     "trust": 4,
+     "alone": 0.6699,
+     "together": 0.6802
+    }
+   ]
+  },
+  "1,2,3,4": {
+   "members": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "patients": 874,
+   "patient_years": 6575,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.5733
+    },
+    {
+     "round": 20,
+     "auroc": 0.6323
+    },
+    {
+     "round": 40,
+     "auroc": 0.6603
+    },
+    {
+     "round": 80,
+     "auroc": 0.6682
+    },
+    {
+     "round": 160,
+     "auroc": 0.6696
+    },
+    {
+     "round": 320,
+     "auroc": 0.6707
+    }
+   ],
+   "alone_auroc": 0.6463,
+   "pooled_auroc": 0.6776,
+   "per_trust": [
+    {
+     "trust": 1,
+     "alone": 0.6889,
+     "together": 0.7838
+    },
+    {
+     "trust": 2,
+     "alone": 0.5583,
+     "together": 0.6183
+    },
+    {
+     "trust": 3,
+     "alone": 0.6261,
+     "together": 0.6482
+    },
+    {
+     "trust": 4,
+     "alone": 0.6699,
+     "together": 0.6791
+    }
+   ]
+  },
+  "0,1,2,3,4": {
+   "members": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "patients": 1015,
+   "patient_years": 7626,
+   "curve": [
+    {
+     "round": 10,
+     "auroc": 0.5732
+    },
+    {
+     "round": 20,
+     "auroc": 0.6333
+    },
+    {
+     "round": 40,
+     "auroc": 0.6631
+    },
+    {
+     "round": 80,
+     "auroc": 0.6726
+    },
+    {
+     "round": 160,
+     "auroc": 0.675
+    },
+    {
+     "round": 320,
+     "auroc": 0.6758
+    }
+   ],
+   "alone_auroc": 0.6496,
+   "pooled_auroc": 0.681,
+   "per_trust": [
+    {
+     "trust": 0,
+     "alone": 0.6643,
+     "together": 0.6975
+    },
+    {
+     "trust": 1,
+     "alone": 0.6889,
+     "together": 0.7883
+    },
+    {
+     "trust": 2,
+     "alone": 0.5583,
+     "together": 0.6194
+    },
+    {
+     "trust": 3,
+     "alone": 0.6261,
+     "together": 0.6482
+    },
+    {
+     "trust": 4,
+     "alone": 0.6699,
+     "together": 0.6806
+    }
+   ]
+  }
+ }
+}

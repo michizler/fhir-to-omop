@@ -66,6 +66,10 @@ Each patient is tested once, in five folds, and never appears in both training a
 
 **A finding about training length.** The first run gave federated 0.663 by region and 0.651 by age, well behind pooling. That came from stopping at 40 rounds, not from federated learning itself. Training length was then chosen on patients held back from training, and federated needed 320 rounds to catch up. See `results/training_length_sweep.json`.
 
+## Live demo
+
+The [FHIR to OMOP Desk](https://brightuzosike.dev/lab/fhir-to-omop) lets you choose which trusts train together and translates a FHIR record into OMOP rows. Training doesn't fit on a small server, so `python -m fhir_to_omop.ml.coalitions` trains all 31 possible groups in advance, and the demo looks up the saved results. These use the same folds as the comparison and the plain FedAvg in `model.py`, which matches the Flower run. `python -m fhir_to_omop.demo_export` writes the small mapping file the demo uses.
+
 ## Repository
 
 ```
